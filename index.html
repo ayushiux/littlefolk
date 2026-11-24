@@ -31,10 +31,10 @@ h1{font-size:clamp(56px,5.4vw,80px);letter-spacing:-4px;line-height:1.08}
 .game-overlay.hidden{visibility:hidden;pointer-events:none}
 .game-overlay>span#game-overlay-caption{font:10px var(--mono);color:var(--muted);display:block}
 .you-word svg{pointer-events:none;overflow:visible}
-.you-word svg path{stroke:var(--ink);stroke-width:8;opacity:0;transition:none}
+.you-word svg path{stroke:currentColor;stroke-width:5;opacity:0;transition:none}
 .you-word:hover svg path{opacity:1}
 @media(hover:none){.you-word svg path{opacity:1}}
-@media(max-width:760px){.you-word svg path{stroke-width:6}}
+@media(max-width:760px){.you-word svg path{stroke-width:4}}
 
 </style>
 </head>
@@ -49,7 +49,7 @@ h1{font-size:clamp(56px,5.4vw,80px);letter-spacing:-4px;line-height:1.08}
     <section class="hero wrap" id="studio" aria-labelledby="hero-title">
       <div class="hero-copy">
         <div class="eyebrow"><span class="live-dot"></span>A TINY CHARACTER STUDIO</div>
-        <h1>Small prompt.<br>Big <span class="you-word">personality<svg viewBox="0 0 225 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12H221" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></span>.</h1>
+        <h1>Small prompt.<br>Big <span class="you-word">personality<svg viewBox="0 0 225 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13Q83 0 222 9M9 18Q98 9 213 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></span>.</h1>
         <p class="hero-description">Turn a little idea into a pixel character<br>with personality.</p>
         <form id="prompt-form" class="prompt-box">
           <label for="prompt">Who’s on your mind?</label>
